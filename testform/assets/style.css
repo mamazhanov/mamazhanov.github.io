@@ -138,6 +138,7 @@ cards
 }
 .line-hr{
     margin-bottom: 100px;
+    height: 10px;
 }
 /*----------------------------
 МЫ ПРЕПОДАЕМ
@@ -156,10 +157,11 @@ cards
 /*------------------
 КАК ЭТО РАБОТАЕТ
  */
+
 section.working {
     position: relative;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 50vh;
     color: #fff;
     text-align: center;
     margin-top: 150px;
@@ -167,10 +169,15 @@ section.working {
 @media (max-width: 800px){
     section.working{
         margin-top: 80px;
+        min-height: 80vh;
     }
 
 }
-    .background-image1 {
+.line__working{
+    color: white;
+    background-color: white;
+}
+.background-image1 {
     background-image: url(https://opt-998882.ssl.1c-bitrix-cdn.ru/upload/iblock/717/71750aa43e396813a9eb370a43ba495b.jpg?1559880189515832);
     position: absolute;
     top: 0;
@@ -201,4 +208,18 @@ section.working {
     text-align: left;
 
 }
+@media (max-width: 768px) {
+    .body-card{
+        display: flex;
+        justify-content: center;
 
+    }
+}
+
+/*-----------------------
+о компании
+ */
+section.about_us{
+    padding-top: 80px;
+    background-color: #f7f7f7;
+}
