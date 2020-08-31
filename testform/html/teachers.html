@@ -18,7 +18,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light pt-3">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="../index.html">
             <span class="red">Bright</span><span class="blue">Line</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,9 @@
                         <div class="card-body">
                             <h3 class="card-title">Card title</h3>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Launch demo modal
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -260,34 +262,51 @@
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header text-light bg-primary">
-                <h4 class="modal-title">Заполните заявку</h4>
+            <div class="modal-header head-modal">
+                <div class="col-9 mx-4">
+                    <div class="bleet">
+                        <div class="pt-3">
+                            <img src="https://englex.ru/wp-content/uploads/ekaterina.o_165-1.jpg" class="card-img-top avatars-2 rounded-circle" alt="...">
+                        </div>
+                        <div class="ml-auto pt-4">
+                            <h3>Екатерина</h3>
+                            <hr>
+                            <audio controls preload="none" id="audio">
+                                <source src="https://www.computerhope.com/jargon/m/example.mp3" />
+                            </audio>
+
+                        </div>
+                    </div>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Имя*" id="recipient-name">
-                    </div>
-                    <div class="form-group">
-                        <input type="number" class="form-control" placeholder="Телефон*" id="recipient-name">
-                    </div>
+            <div class="modal-body modal-dialog-scrollable">
+                <div class="p-4">
+                    <p><strong>Стаж:</strong> 5 лет <br>
+                    <strong>Образование:</strong> Высшее педагогическое <br>
+                    <strong>Сертификаты:</strong> FCE</p>
+                    <p>Привет, меня зовут Екатерина. <br>
+                        <br>
+                        Я дипломированный преподаватель английского языка. У меня есть опыт работы со студентами разных возрастов и уровней, поэтому я знаю, как найти подход к ученику и заинтересовать его изучением английского. Мне нравится делиться своими знаниями и опытом, наблюдать за прогрессом своих студентов и помогать им в достижении их целей.
+                        <br>
+                        <br>
+                        На наших уроках вам не придется скучать, мы, прежде всего, будем общаться. Через общение вы будете осваивать новую лексику, грамматику. Я помогу вам преодолеть языковой барьер, и вы станете более уверенно говорить по-английски. Если вы визуал, аудиал или кинестетик, в выборе и подаче материала я буду ориентироваться на ваши способности — это позволит вам быстрее усвоить новый материал.
+                        <br>
+                        <br>
+                        Я точно знаю, что люди эффективнее делают то, что любят, поэтому моя задача — влюбить вас в английский. До встречи на занятиях!
 
-                    <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Сообщение" id="message-text"></textarea>
-                    </div>
-                </form>
+                    </p>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                <button type="button" class="btn btn-primary">Отправить</button>
             </div>
-
         </div>
     </div>
 </div>

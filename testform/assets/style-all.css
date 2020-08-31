@@ -60,3 +60,34 @@ footer
 /*------------------
 modal
  */
+
+
+
+
+
+
+
+/*-----------------------
+     TEACHERS STYLE
+ */
+
+/*-----------
+modal
+ */
+.bleet{
+    display: flex;
+}
+@media (max-width: 800px) {
+    .bleet{
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+}
+.head-modal{
+    background-color: #ececec;
+}
+.avatars-2{
+    margin-bottom: 15px;
+}
