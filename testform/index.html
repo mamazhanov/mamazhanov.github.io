@@ -24,9 +24,9 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Главная <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Преподаватели</a>
-            <a class="nav-item nav-link" href="#">Тест</a>
+            <a class="nav-item nav-link active" href="index.html">Главная <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="html/teachers.html">Преподаватели</a>
+            <a class="nav-item nav-link" href="#">Уровни</a>
             <a class="nav-item nav-link" href="#">Контакты</a>
           </div>
         </div>
@@ -54,7 +54,7 @@
             <div class="form-group pt-4">
               <div class="form-check row px-4 d-flex justify-content-center">
                <p><input class="form-check-input checked" type="checkbox" value="" id="invalidCheck" required checked>
-                  Я согласен на обработку моих персональных данных</p>
+                  Я согласен на обработку моих <a href="html/agreement.html" target="_blank" style="color: white">персональных данных</a></p>
               </div>
 
             </div>
@@ -134,7 +134,7 @@
               <div class="ml-auto pt-3">
                 <h3>Английский</h3>
                 <p>English</p>
-                <button type="button" class="btn btn-warning py-2">Начать обучение</button>
+                <button type="button" class="btn btn-warning py-2"data-toggle="modal" data-target="#staticBackdrop">Начать обучение</button>
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@
               <div class="ml-auto pt-3">
                 <h3>Китайский</h3>
                 <p>中国</p>
-                <button type="button" class="btn btn-warning  py-2">Начать обучение</button>
+                <button type="button" class="btn btn-warning  py-2"data-toggle="modal" data-target="#staticBackdrop">Начать обучение</button>
               </div>
             </div>
           </div>
@@ -275,10 +275,10 @@
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 class="text-uppercase pt-3 mb-4 font-weight-Montserrat">МЕНЮ</h6>
               <p>
-                <a href="#">Главная</a>
+                <a href="index.html">Главная</a>
               </p>
               <p>
-                <a href="#!">Преподаватели</a>
+                <a href="html/teachers.html">Преподаватели</a>
               </p>
               <p>
                 <a href="#!">Система Уровней</a>
@@ -371,6 +371,39 @@
       <!-- Footer -->
 
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-light bg-primary">
+            <h4 class="modal-title">Заполните заявку</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Имя*" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Телефон*" id="recipient-name">
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Сообщение" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">Отправить</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
