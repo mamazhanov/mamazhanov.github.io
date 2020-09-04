@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .intro{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("image/pexels-kon-karampelas-3924335.jpg");
+            padding: 0 100px;
+
+        }
+        .main-content{
+            width: 80%;
+            display: flex;
+            align-items: center;
+        }
+        @media (max-width: 768px)
+        {
+
+        }
+        .sign-up{
+            width: 18rem;
+            height: 20rem;
+            padding: 2rem;
+            background-color: rgba(0,0,0,0.6);
+            border-radius: 15px;
+            margin-left: auto;
+        }
+        .sign-up input{
+            width: 100%;
+            outline: none;
+            border: 1px solid rgba(224, 99, 99, 0.6);
+            background: transparent;
+            padding: 8px 10px;
+            border-radius: 8px;
+            color: rgba(255,255,255, 0.7);
+            font-size: 1rem;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <section class="intro">
+        <div class="main-content">
+            <div class="content">
+                <p>This is Elmurat's page</p>
+                <h1>Login to view the page</h1>
+                <p class="text-muted">Page made for  examples</p>
+            </div>
+            <div class="sign-up">
+                <h1 class="text-center"><i class="fa text-white fa-lock" aria-hidden="true"></i></h1>
+
+                <form>
+                    <input type="text" class="form-control my-4 transparent"  placeholder="User name">
+                    <input type="password" class="form-control my-4" placeholder="Password">
+                    <input type="submit" class="btn btn-block form-control my-2 text-white" value="Login">
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
