@@ -1,115 +1,51 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
-    color: rgba(255, 255, 255, 0.92);
-    font-size: 18px;
-}
-@media (max-width: 800px){
-    .bg-image{
-        background-image: url();
-    }
-}
-.bg-image{
-    background-image: url(https://images.pexels.com/photos/4100179/pexels-photo-4100179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-color: #2196f3;
-    z-index: -1;
-}
-.bg-image:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #414a4f;
-    opacity: 0.30;
-}
-
-.intro{
-    width: 100%;
+section{
     height: 100vh;
+    background: repeating-linear-gradient(45deg, yellow  , #07b107  );
+}
+.content_block{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    padding: 0 100px;
-
-}
-.main-content{
-    width: 80%;
-    display: flex;
-    align-items: center;
-}
-@media (max-width: 768px){
-    .main-content{
-        display: block;
-        justify-content: center;
-    }
 }
 .sign-up{
-    width: 18rem;
+    width: 16rem;
     height: 20rem;
-    padding: 2rem;
-    background-color: rgba(0,0,0,0.6);
+    background: rgba(170, 255, 170, 0.6);
+    padding: 50px 20px;
     border-radius: 15px;
-    margin-left: auto;
+    box-shadow: 0 0 5px #3f643f;
 }
-.form-control{
+.input{
     width: 100%;
     outline: none;
-    border: 0px;
-    border-bottom: 1px solid rgba(106, 105, 107, 0.3);
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
     background: transparent;
     padding: 8px 5px;
     border-radius: 3px;
-    color: rgba(255,255,255, 0.7);
+    color: rgba(0, 0, 0, 1);
     font-size: 18px;
     margin-top: 20px;
 }
 .btn{
     width: 100%;
     outline: none;
-    border: 0px;
-    border: 1px solid rgba(106, 105, 107, 0.3);
+    border: 1px solid rgba(0, 0, 0, 1);
+
     background: transparent;
     padding: 8px 5px;
-    border-radius: 3px;
-    color: rgba(255,255,255, 0.7);
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 1);
     font-size: 18px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
-.btn:hover{
-    background: rgba(255, 255, 255, 0.05)
+.text{
+    color: color(29785);
 }
-.hi-text{
-    text-align: center;
+@media (max-width: 768px) {
+    .sign-up{
+        margin-top: 50px;
+    }
 }
 .fa{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-
-.title{
-    margin-top: 0.5rem;
-    font-size: 40px;
-    font-weight: 600;
-}
-.text-muted{
-    color:rgba(255, 255, 255, 0.5)
+    color:rgb(0, 0, 0);
 }

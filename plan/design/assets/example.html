@@ -1,74 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <title>Hello, world!</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .intro{
-            width: 100%;
+        section{
             height: 100vh;
+            background-image: repeating-linear-gradient( 45deg, #aa16c4, #2ad7dd);
+        }
+        .content_block{
             display: flex;
             justify-content: center;
-            align-items: center;
-            background-image: url("image/pexels-kon-karampelas-3924335.jpg");
-            padding: 0 100px;
-
-        }
-        .main-content{
-            width: 80%;
-            display: flex;
-            align-items: center;
-        }
-        @media (max-width: 768px)
-        {
-
         }
         .sign-up{
-            width: 18rem;
+            width: 16rem;
             height: 20rem;
-            padding: 2rem;
-            background-color: rgba(0,0,0,0.6);
+            background: rgba(170, 255, 170, 0.6);
+            padding: 50px 20px;
             border-radius: 15px;
-            margin-left: auto;
+            box-shadow: 0 0 5px #3f643f;
         }
-        .sign-up input{
+        .input{
             width: 100%;
             outline: none;
-            border: 1px solid rgba(224, 99, 99, 0.6);
+            border: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 1);
             background: transparent;
-            padding: 8px 10px;
-            border-radius: 8px;
-            color: rgba(255,255,255, 0.7);
-            font-size: 1rem;
-            margin-top: 15px;
+            padding: 8px 5px;
+            border-radius: 3px;
+            color: rgba(0, 0, 0, 1);
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .btn{
+            width: 100%;
+            outline: none;
+            border: 1px solid rgba(0, 0, 0, 1);
+
+            background: transparent;
+            padding: 8px 5px;
+            border-radius: 6px;
+            color: rgba(0, 0, 0, 1);
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .text{
+            color: color(29785);
+        }
+        @media (max-width: 768px) {
+            .sign-up{
+                margin-top: 50px;
+            }
+        }
+        .fa{
+            color:rgb(0, 0, 0);
         }
     </style>
 </head>
 <body>
-    <section class="intro">
-        <div class="main-content">
-            <div class="content">
-                <p>This is Elmurat's page</p>
-                <h1>Login to view the page</h1>
-                <p class="text-muted">Page made for  examples</p>
-            </div>
-            <div class="sign-up">
-                <h1 class="text-center"><i class="fa text-white fa-lock" aria-hidden="true"></i></h1>
 
-                <form>
-                    <input type="text" class="form-control my-4 transparent"  placeholder="User name">
-                    <input type="password" class="form-control my-4" placeholder="Password">
-                    <input type="submit" class="btn btn-block form-control my-2 text-white" value="Login">
-                </form>
+    <section class="d-flex align-items-center bg-secondary">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <div class="text">
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 content_block">
+                    <div class="sign-up">
+                        <div class="text-center"><i class="fa fa-lock fa-2x"></i></div>
+                        <form action="#">
+                            <input type="text" class="input" placeholder="User-name">
+                            <input type="password" class="input" placeholder="Password">
+                            <input type="button" class="btn" value="Login">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
