@@ -8,8 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome!</title>
     <style>
 
     </style>
@@ -21,18 +21,19 @@
         <div class="row d-flex align-items-center">
             <div class="col-md-6">
                 <div class="text">
-                    <p class="">Lorem ipsum dolor sit amet.</p>
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-                    <p>Lorem ipsum dolor sit.</p>
+                    <p class="disp-text">Welcome to the page of Elmurat</p>
+                    <h1>Sign in to view other pages</h1>
+                    <p class="muted">Pages created for examples</p>
                 </div>
             </div>
             <div class="col-md-6 content_block">
                 <div class="sign-up">
-                    <div class="text-center"><i class="fa fa-lock fa-2x"></i></div>
-                    <form action="#">
-                        <input type="text" class="input" placeholder="User-name">
-                        <input type="password" class="input" placeholder="Password">
-                        <input type="button" class="btn" value="Login">
+                    <div class="text-center mb-4"><i class="fa fa-lock fa-3x"></i><br></div>
+
+                    <form action="#" name="Sel1">
+                        <input type="text" name="userName" class="input" placeholder="User-name">
+                        <input type="password" name="password" class="input" placeholder="Password">
+                        <input type="button" class="btn" onclick="Complete();" value="Login">
                     </form>
                 </div>
             </div>
@@ -40,6 +41,23 @@
     </div>
 </section>
 
+<script>
+    var user = "mamazhanov";
+    var password =  1234;
+    function Complete()
+    {
+        var username = document.Sel1.userName.value;
+        var pass =  document.Sel1.password.value;
+
+
+        if (username == user, pass == password) {
+            document.location.href = "../index.html";
+        }
+        else {
+            alert("Не правильно введен логин или пароль. Повторите попытку")
+        }
+    }
+</script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
