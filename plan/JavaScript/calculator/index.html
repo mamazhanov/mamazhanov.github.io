@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="hero d-flex align-items-center">
+        <div class="bgimage"></div>
+        <div class="card px-2">
+            <div class="row">
+                <div class="col">
+                    <form action="#" name="form">
+                        <input type="text" class="w-100" name="textview" readonly maxlength="9">
+                    </form>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary" onclick="clean();">C</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary" onclick="back()">&larr;</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary">%</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-warning" onclick="insert('/')">&divide;</div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('7')">7</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('8')">8</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('9')">9</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-warning" onclick="insert('*')" >&times;</div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('4')">4</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('5')">5</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('6')">6</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-warning" onclick="insert('-')">-</div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('1')">1</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('2')">2</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('3')">3</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-warning" onclick="insert('+')">+</div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-4">
+                    <div class=" bt-0 bg-secondary"onclick="insert('0')">0</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-secondary"onclick="insert('.')">.</div>
+                </div>
+                <div class="col-2">
+                    <div class="rounded-circle bg-warning" onclick="equal()">=</div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
