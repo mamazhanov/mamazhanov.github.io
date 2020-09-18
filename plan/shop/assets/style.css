@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    outline: none;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    background-color: #f6ffff;
+    font-size: 1.3rem;
+}
+
+.navbar-brand{
+    font-size: 1.7rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand  img{
+    width: 60px;
+}
+
+/*section hero*/
+.hero {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 70vh;
+}
+.for-hr{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgba(88, 88, 88, 0.5);
+}
+.col-md-7 h1{
+    font-weight: 600;
+}
+.col-md-5 img.image-1{
+    width:500px;
+    height: 500px;
+    border-radius: 50%;
+    user-select: none;
+
+}
+.btn{
+    border-radius: 10px;
+}
+@media (max-width: 767px){
+    .col-md-5 img.image-1{
+        width: 100%;
+        height: auto;
+        user-select: none;
+    }
+    .col-md-5{
+        padding: 50 0px;
+    }
+    .col-md-7 h1{
+        font-size: 30px;
+    }
+    .col-md-7 h2{
+        font-size: 25px;
+    }
+    .btn{
+       font-size: 12px;
+    }
+}
+
+/*ABOUT SEC*/
+
+.about h2{
+    font-weight: 600;
+}
+.about-content .text-center{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+@media(max-width: 767px){
+    .about-content .text-center{
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    
+}
+.alignment{
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(88, 88, 88, 0.5);    
+}
+.image-2{
+    width: 100%;
+}
+/*you now?*/
+.for-align{
+    display: flex;
+    align-items:center;
+}
+
+/*DIALOG SECTION*/
+.reg-form{
+    width: 100%;
+    padding: 30px 10px 50px 10px;
+    background-color: #25D366;
+    border-radius: 30px;
+}
+.reg-form p{
+    color: #fff;
+}
+.input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 15px;
+
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    margin-top: 15px;
+}
+.botton{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 15px;
+    background: #075E54;
+    color: #FFF;
+    font-size: 18px;
+    margin-top: 22px;
+}
+@media (max-width: 768px){
+    .botton{
+        font-size: 12px;
+        padding: 12px 15px;
+    }
+}
+/*SEC END*/
+section.end{
+    background-color: #20B2AA;
+    padding: 80px 0;
+}
+.block-body{
+    color: #fff;
+    padding: 50px 20px;
+    background-color: rgba(0, 139, 139, 0.8);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.for-fw{
+    font-weight: 700;
+}
+
+/*FOOTER*/
+footer{
+    padding-top: 80px;
+}
