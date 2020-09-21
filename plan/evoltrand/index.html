@@ -112,10 +112,10 @@
           <div class="col-md-6">
             <div class="reg-form">
               <p class="text-center"><i class="fa fa-4x fa-whatsapp"></i></p>
-              <form class="mx-5" method="POST" action="mail.php">
-                  <input type="text" name="user_whatsapp" class="input" placeholder="Имя" required>
-                  <input type="number" name="user_wa" class="input" placeholder="Ваш WhatsApp" required>
-                  <input type="button" class="botton" value="ХОЧУ УЗНАТЬ ПОДРОБНО">
+              <form class="mx-5" method="POST" action="telegram.php">
+                  <input type="text" name="user_name" class="input" placeholder="Имя" required>
+                  <input type="number" name="user_phone" class="input" placeholder="Ваш WhatsApp" required>
+                  <input type="submit" class="botton" value="ХОЧУ УЗНАТЬ ПОДРОБНО">
               </form>
             </div>
           </div>
@@ -186,22 +186,28 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="mail.php" method="POST">
+        <form action="registration.php" method="POST">
           <div class="form-group">
-            <input type="text" name="user_name" class="form-control" placeholder="Имя*" required id="recipient-name">
+            <input type="text" name="user_reg_name" class="form-control" placeholder="Имя*" required id="recipient-name">
+          </div>
+           <div class="form-group">
+            <input type="text" name="user_reg_surname" class="form-control" placeholder="Фамилия*" required id="recipient-name">
           </div>
           <div class="form-group">
-            <input type="number" name="user_phone" class="form-control" placeholder="Телефон*" required id="recipient-name">
+            <input type="number" name="user_reg_phone" class="form-control" placeholder="Телефон*" required id="recipient-name">
           </div>
-
           <div class="form-group">
-            <textarea class="form-control" name="user_email" rows="5" placeholder="Сообщение" id="message-text"></textarea>
+            <input type="email" name="user_reg_email" class="form-control" placeholder="Email*" required id="recipient-name">
+          </div>
+          <div class="d-flex justify-content-end">
+             <button type="submit" class="btn btn-primary">Отправить</button>
+            
           </div>
         </form>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer ">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-        <button type="button" class="btn btn-primary">Отправить</button>
+        
       </div>
     </div>
   </div>
