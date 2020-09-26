@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="bg-image"></div>
+
+
+    <section>
+        <div class="content">
+            <div id="slider">
+                <div class="msg-col">
+                    <h1>The 1</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque architecto quam est maxime vitae molestias, molestiae repudiandae deleniti numquam saepe provident nesciunt mollitia velit modi. Magnam illo quae corrupti quibusdam.</p>
+                </div>
+                <div class="msg-col">
+                    <h1>The 2</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque architecto quam est maxime vitae molestias, molestiae repudiandae deleniti numquam saepe provident nesciunt mollitia velit modi. Magnam illo quae corrupti quibusdam.</p>
+                </div>
+                <div class="msg-col">
+                    <h1>The 3</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque architecto quam est maxime vitae molestias, molestiae repudiandae deleniti numquam saepe provident nesciunt mollitia velit modi. Magnam illo quae corrupti quibusdam.</p>
+                </div>
+                <div class="msg-col">
+                    <h1>The 4</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque architecto quam est maxime vitae molestias, molestiae repudiandae deleniti numquam saepe provident nesciunt mollitia velit modi. Magnam illo quae corrupti quibusdam.</p>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="controler">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+            <div id="active"></div>
+        </div>
+    
+    
+       
+    </section>
+
+        
+    <script>
+    
+        var slider = document.getElementById('slider');
+        var active = document.getElementById('active');
+        var line1 = document.getElementById('line1');
+        var line2 = document.getElementById('line2');
+        var line3 = document.getElementById('line3');
+        var line4 = document.getElementById('line4');
+
+        line1.onclick = function (){
+            slider.style.transform = 'translateX(0)';
+            active.style.top = '0px';
+        }
+        line2.onclick = function (){
+            slider.style.transform = 'translateX(-25%)';
+            active.style.top = '80px';
+
+        }
+        line3.onclick = function (){
+            slider.style.transform = 'translateX(-50%)';
+            active.style.top = '160px';
+
+        }
+        line4.onclick = function (){
+            slider.style.transform = 'translateX(-75%)';
+            active.style.top = '240px';
+
+        }
+    </script>
+</body>
+</html>
