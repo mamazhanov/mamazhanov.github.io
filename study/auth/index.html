@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+
+  <section id="signup">
+    <div class="form">
+      <h2>Регистрация</h2>
+      <label for="userName">Ваш логин:</label> <br>
+      <input class="forData" type="text" placeholder="придумайте логин" id="userName" autocomplete="off"> <br>
+      <label for="userPass">Ваш пароль:</label> <br>
+      <input class="forData" type="password" placeholder="придумайте пароль" id="userPass" autocomplete="off"> <br>
+      <input class="btn" type="submit" onclick="add()">
+    </div>
+  </section>
+
+  <section id="signin">
+    <div class="form" id="signIn" autocomplete="off">
+      <h2>Вход</h2>
+      <label for="name">Ваш логин:</label> <br>
+      <input class="forData" type="text" id="name"> <br>
+      <label for="password">Ваш пароль:</label> <br>
+      <input class="forData" type="password" id="password"> <br>
+      <input class="btn" type="submit" onclick="signIn()">
+    </div>
+  </section>
+
+  <section id="preload">
+    <div>
+      Loading...
+    </div>
+  </section>
+
+  <section id="mainContent">
+    <div>
+      Добропожаловать
+    </div>
+  </section>
+
+</body>
+
+<script src="assets/index.js"></script>
+
+</html>
