@@ -2,7 +2,7 @@ let month = 18,
     sum = 5000,
     earnings = 0,
     pay = 0,
-    yearPercent = 24;
+    yearPercent = 20;
 
 //Слайдер месяца
 let slider_month = document.getElementById("month");
@@ -20,12 +20,9 @@ const calc = () => {
     let allSum = profit + sum;
     let everyMonthProfit = allSum / month;
 
-    console.log(allSum)
-
     earnings_output.innerHTML = new Intl.NumberFormat().format(profit);
     pay_output.innerHTML = Math.floor(everyMonthProfit);
     year_percent_output.innerHTML = yearPercent + "%"
-
 }
 
 const sum_slider = () => {
