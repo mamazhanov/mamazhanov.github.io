@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="main__body">
+            <div class="main__title">
+                Калькулятор расчета <br />инвестиций
+            </div>
+
+            <div class="main__content">
+                <div class="info-block">
+                    <p>
+                        Ваша инвестиция: <span id="investments_span">50 000</span> €
+                    </p>
+                </div>
+                <div>
+                    <input type="range" oninput="sum_slider()" value="50000" id="sum" min="100" max="100000"
+                        step="50" />
+                    <div class="label">
+                        <p>100</p>
+                        <p>1000000</p>
+                    </div>
+                </div>
+                <br>
+                <div class="info-block">
+                    <p>
+                        <span id="month_span">20</span> мес
+                    </p>
+                </div>
+                <div>
+                    <input type="range" oninput="month_slider()" value="20" id="month" min="4" max="36" step="1" />
+                    <div class="label">
+                        <p>4 месяца</p>
+                        <p>36 месяцев</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="data_block">
+            <div>
+                <div id="year_percent_output">24 %</div> годовых
+            </div>
+            <div>
+                <div id="earnings_output">20 000</div> ваш заработок
+            </div>
+            <div>
+                <div id="pay_output">1 000</div> ежемесячная выплата
+            </div>
+        </div>
+        <div>
+            <button class="btn">Инвестировать</button>
+        </div>
+    </div>
+    <script src="assets/app.js"></script>
+
+</body>
+
+</html>
