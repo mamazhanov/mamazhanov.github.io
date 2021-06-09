@@ -20,7 +20,7 @@ const calc = () => {
     let allSum = profit + sum;
     let everyMonthProfit = allSum / month;
 
-    earnings_output.innerHTML = new Intl.NumberFormat().format(profit);
+    earnings_output.innerHTML = new Intl.NumberFormat().format(Math.floor(profit));
     pay_output.innerHTML = Math.floor(everyMonthProfit);
     year_percent_output.innerHTML = yearPercent + "%"
 }
