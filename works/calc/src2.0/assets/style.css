@@ -17,7 +17,7 @@ body {
 .calc-block {
   width: 1170px;
   height: 896px;
-
+  padding: 64px;
   background: #ffffff;
   border: 1px solid #e77a17;
   box-sizing: border-box;
@@ -30,4 +30,63 @@ body {
   font-weight: normal;
   font-size: 40px;
   line-height: 155.5%;
+  text-align: center;
+  color: #e97b18;
+}
+
+.calc-body {
+  display: flex;
+  justify-content: center;
+  color: #e97b18;
+}
+
+.calc-body input {
+  width: 500px;
+  height: 80px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  outline: none;
+  color: #e97b18;
+  background-color: #efefef;
+  border-radius: 8px;
+  border: 0px solid #efefef;
+}
+
+label {
+  font-size: 18px;
+}
+.leftblock {
+  margin-right: 30px;
+}
+
+.calc-footer {
+  display: flex;
+  align-items: center;
+}
+
+.type-obj {
+  display: flex;
+  color: #e97b18;
+  width: 500px;
+}
+
+.type-obj label {
+  margin-right: 80px;
+}
+.ranges {
+  font-weight: bold;
+  font-size: 20px;
+}
+.ranges input[type='radio'] {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background-color: #e77a17;
+  border: 5px solid gray;
+}
+.ranges label {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 20px;
 }

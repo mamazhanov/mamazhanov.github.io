@@ -1,8 +1,8 @@
 function speak(text) {
 	const message = new SpeechSynthesisUtterance();
-	//message.lang = "ru-RU";
-	message.lang = "en-EN";
-	
+	message.lang = "ru-RU";
+	// message.lang = "en-EN";
+
 	message.text = text;
 	window.speechSynthesis.speak(message);
 }
