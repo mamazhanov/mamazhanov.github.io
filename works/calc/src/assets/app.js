@@ -1,8 +1,10 @@
-let month = 18,
+let month = 12,
     sum = 5000,
     earnings = 0,
     pay = 0,
-    yearPercent = 20;
+    yearPercent = 20,
+    monthly = 20;
+
 
 //Слайдер месяца
 let slider_month = document.getElementById("month");
@@ -18,7 +20,7 @@ let year_percent_output = document.getElementById("year_percent_output");
 const calc = () => {
     let profit = sum * yearPercent * month * 30 / (30 * 12) / 100;
     let allSum = profit + sum;
-    let everyMonthProfit = allSum / month;
+    let everyMonthProfit = allSum / monthly;
 
     earnings_output.innerHTML = new Intl.NumberFormat().format(Math.floor(profit));
     pay_output.innerHTML = Math.floor(everyMonthProfit);
@@ -32,21 +34,16 @@ const sum_slider = () => {
 }
 
 const month_slider = () => {
-    if (slider_month.value <= 17) {
-        yearPercent = 15;
-        document.getElementById("year_percent_output").innerHTML = "15%";
-    }
-    else if (slider_month.value <= 23) {
+    if (slider_month.value <= 23) {
         yearPercent = 20;
-        document.getElementById("year_percent_output").innerHTML = "20%";
+        document.getElementById("year_percent_output").innerHTML = yearPercent + "%";
     }
     else if (slider_month.value >= 24) {
         yearPercent = 24;
-        document.getElementById("year_percent_output").innerHTML = "24%";
+        document.getElementById("year_percent_output").innerHTML = yearPercent + "%";
     }
-    month = +slider_month.value;
+    monthly = +slider_month.value;
     document.getElementById("month_span").innerHTML = slider_month.value;
     calc();
 }
-
 calc();
