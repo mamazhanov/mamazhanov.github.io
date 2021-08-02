@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://st2.depositphotos.com/8392720/11436/v/950/depositphotos_114367722-stock-illustration-social-media-seamless-pattern.jpg');
+  background-size: 300px;
+}
+body section div.cart {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+  border-radius: 10px;
+  background: #25d366;
+  padding: 6px 8px;
+  color: white;
+  border: none;
+  width: 13%;
+}
+
+input {
+  width: 83%;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: 0.1px solid rgba(0, 0, 0, 0.692);
+  padding: 5px 12px;
+  outline: none;
+}
+
+.disabled_scroll {
+  -moz-appearance: textfield;
+}
+.disabled_scroll::-webkit-inner-spin-button {
+  display: none;
+}
